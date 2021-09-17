@@ -1,25 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
-
+//import {GetNews} from "./utils/GetNews";
+import { GetNewsLog } from './utils/GetNewsLog';
+import { GetNewsGlobal } from './GetNewsGlobal.js';
+//import { GetData } from './simulacro';
+import { News } from './componets/News.js';
 function App() {
+
+  //GetNews(); 
+  //News();
+  // GetNewsLog();
+  //GetData ();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <News/>
+    <GetNewsGlobal/>
     </div>
   );
 }
 
 export default App;
+
+// import './App.css';
+// import { News } from './news';
+// //import { GetData } from './simulacro';
+// import { GetNews } from './utils/GetNews';
+// import { ViewNews } from './ViewNews';
+
+
+
+
+
+// function App() {
+
+//   GetNews();
+//   //GetData ();
+//   return (
+//     <div className="App">
+//      <ViewNews/>
+//     </div>
+//   );
+// }
+
+// export default App;
+
